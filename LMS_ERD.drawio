@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="LMS_ERD">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <mxCell id="users" value="USERS&#10;PK id&#10;full_name&#10;email&#10;password_hash&#10;role&#10;created_at" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="40" width="220" height="140" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="courses" value="COURSES&#10;PK id&#10;title&#10;description&#10;FK instructor_id&#10;price&#10;created_at" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="220" width="220" height="140" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="enrollments" value="ENROLLMENTS&#10;PK id&#10;FK student_id&#10;FK course_id&#10;enrolled_at&#10;status" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="220" width="220" height="140" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="assignments" value="ASSIGNMENTS&#10;PK id&#10;FK course_id&#10;title&#10;description&#10;due_date&#10;total_marks" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="220" width="220" height="140" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="quizzes" value="QUIZZES&#10;PK id&#10;FK course_id&#10;title&#10;total_marks&#10;time_limit" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="400" width="220" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="questions" value="QUESTIONS&#10;PK id&#10;FK quiz_id&#10;question_text&#10;option_a&#10;option_b&#10;option_c&#10;option_d&#10;correct_option" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="550" width="220" height="160" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
