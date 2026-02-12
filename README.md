@@ -1,2 +1,14 @@
-# LMS-Database-PostgreSQL
-A fully normalized Learning Management System (LMS) database built using PostgreSQL with tables, stored procedures, views, indexing, and performance optimization.
+# LMS Database Project
+
+## Overview
+This project is a Learning Management System built using PostgreSQL.
+
+## Features
+- Course Management
+- Student Enrolment
+- Quiz Evaluation
+- Certificate Generation
+
+## Tools Used
+- PostgreSQL
+- SQL
